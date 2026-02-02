@@ -6,39 +6,21 @@ A minimal, beautiful CLI music player that searches and downloads music from You
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20|%20macOS-lightgrey)
 
-## ✨ Features
+##  Features
 
-- **🔍 YouTube Search** — Search millions of songs directly from your terminal
-- **⬇️ One-Click Download** — Download audio as MP3 using yt-dlp
-- **🎧 Built-in Player** — Play music without leaving the terminal
-- **📚 Local Library** — Manage your downloaded music collection
-- **🎨 Beautiful TUI** — Modern terminal UI with colors, progress bars, and smooth navigation
-- **⌨️ Keyboard Driven** — Full keyboard navigation for a seamless experience
+- **YouTube Search** — Search millions of songs directly from your terminal
+- **One-Click Download** — Download audio as MP3 using yt-dlp
+- **Built-in Player** — Play music without leaving the terminal
+- **Local Library** — Manage your downloaded music collection
+- **Beautiful TUI** — Modern terminal UI with colors, progress bars, and smooth navigation
+- **Keyboard Driven** — Full keyboard navigation for a seamless experience
 
-## 📸 Screenshots
-
-```
-🎵 Personal Musician
-
-┌──────────────────────────────────────────────────────┐
-│ ▶ Bohemian Rhapsody  ████████░░░░░░░░  02:45/05:55  │
-└──────────────────────────────────────────────────────┘
-
- 📚 Library 
-
-  ▶ Bohemian Rhapsody.mp3
-  > Hotel California.mp3
-    Stairway to Heaven.mp3
-    Sweet Child O Mine.mp3
-
-↑/↓: navigate • enter: play • s: search • space: pause • q: quit
-```
 
 ## 🚀 Installation
 
 ### Prerequisites
 
-- **Go 1.21+** — [Install Go](https://golang.org/dl/)
+- **Go 1.21+** 
 - **yt-dlp** — Required for downloading from YouTube
 - **ffmpeg** — Required for audio conversion
 
@@ -89,7 +71,7 @@ go build -o personal-musician .
 go install github.com/adi-253/Personal_Musician@latest
 ```
 
-## 🎮 Usage
+## Usage
 
 Simply run the application:
 
@@ -105,12 +87,12 @@ Simply run the application:
 | `←` / `→` | Previous/Next song |
 | `↑` / `↓` | Navigate lists |
 | `Enter` | Select/Confirm |
-| `s` | Open YouTube search |
+| `s` | Open  search |
 | `Tab` | Switch between Library and Results |
 | `Esc` | Back to library |
 | `q` / `Ctrl+C` | Quit |
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 Personal_Musician/
@@ -124,7 +106,7 @@ Personal_Musician/
 └── go.mod           # Go module definition
 ```
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Component | Library |
 |-----------|---------|
@@ -133,39 +115,11 @@ Personal_Musician/
 | **Audio Playback** | [beep](https://github.com/gopxl/beep) |
 | **YouTube Download** | [yt-dlp](https://github.com/yt-dlp/yt-dlp) (external) |
 
-## 🔄 How It Works
+## How It Works
 
 1. **Search** — Enter a song name and search YouTube
 2. **Download** — Select a result to download as MP3
 3. **Play** — Songs are saved to `./Music/` and auto-added to your library
 4. **Enjoy** — Navigate your library and control playback with keyboard shortcuts
 
-## ⚠️ Disclaimer
 
-This tool is for personal use only. Please respect copyright laws and only download content you have the right to download. The developers are not responsible for any misuse of this software.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 🙏 Acknowledgments
-
-- [Charm](https://charm.sh/) for the amazing TUI libraries
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp) for YouTube downloading capabilities
-- [beep](https://github.com/gopxl/beep) for audio playback
-
----
-
-<p align="center">
-  Made with ❤️ and Go
-</p>
