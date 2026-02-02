@@ -260,9 +260,15 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 func (m Model) handleKeyPress(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 	// Global keys (work in all views)
 	switch msg.String() {
-	case "ctrl+c", "q":
+	case "ctrl+c":
 		m.cancelFunc()
 		return m, tea.Quit
+
+	case "q": // Quit (only when not in search view)
+		if m.currentView != ViewSearch {
+			m.cancelFunc()
+			return m, tea.Quit
+		}
 
 	case " ": // Space - toggle pause
 		if m.currentView != ViewSearch { // Don't capture space in search input
